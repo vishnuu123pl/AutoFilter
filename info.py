@@ -15,9 +15,9 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6427124758:-lcvi11tlOts9MUE')
+API_ID = int(environ.get('API_ID', '13305226'))
+API_HASH = environ.get('API_HASH', '8cde2475d6b0cb1162b89ebbac71a95d')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6621594376:AAGCwfRJKYFVyyACBA5PFxDpPzzye95MmwU')
 
 PICS = (environ.get('PICS', 'https://graph.org/file/2518d4eb8c88f8f669f4c.jpg https://graph.org/file/d6d9d9b8d2dc779c49572.jpg https://graph.org/file/4b04eaad1e75e13e6dc08.jpg https://graph.org/file/05066f124a4ac500f8d91.jpg https://graph.org/file/2c64ed483c8fcf2bab7dd.jpg')).split() #SAMPLE PIC
 START_IMG = environ.get('START_IMG', 'https://graph.org/file/208ae1ffacc082167dbc4.jpg')
@@ -25,19 +25,19 @@ QR_CODE = environ.get('QR_CODE', '')
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6497757690').split()]
-USERNAME = environ.get('USERNAME', "https://telegram.me/cosmic_freak")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001868871195'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/movie7xchat')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001619818259').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb")
+USERNAME = environ.get('USERNAME', "https://telegram.me/vis_hnu_bot")
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001906470657'))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '1258310642 6577722992').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://V:V@cluster0.ommvnlw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
-TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @codflix_bots</b>")
-APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
+TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ MALLU TV SERIALS</b>")
+APPROVED = environ.get("APPROVED_WELCOME", "off").lower()
 
 #chatgptAI
-AI = is_enabled((environ.get("AI","True")), True)
+AI = is_enabled((environ.get("AI","False")), True)
 OPENAI_API = environ.get("OPENAI_API", " ")
 DEEP_API = environ.get("DEEP_API", "3ac9b077-654f-45c6-a1f0-a04a5ef6b69e")
 GOOGLE_API_KEY = environ.get("GOOGLE_API_KEY", "AIzaSyD214hhYJ-xf8rfaWX044_g1VEBQ0ua55Q")
@@ -45,19 +45,19 @@ AI_LOGS = int(environ.get("AI_LOGS", "-1001868871195")) #GIVE YOUR NEW LOG CHANN
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "public")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001868871195'))
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1001868871195'))
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1001868871195'))
-URL = environ.get('URL', 'mytestbot-jvdfhbj.com') # your deployment url
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001906470657'))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1001906470657'))
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1001906470657'))
+URL = environ.get('URL', '') # your deployment url
 STICKERS_IDS = ('CAACAgUAAxkBAAEC5s1mfmbnUx4f7jYODXqmoDo_QltzLQACmw4AAl3VAVYieASlHlskATUE').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001868871195'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001906470657'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/How_to_Download_7x/35")
-SHORTENER_API = environ.get("SHORTENER_API", "")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", '')
-SHORTENER_API2 = environ.get("SHORTENER_API2", "")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", '')
+SHORTENER_API = environ.get("SHORTENER_API", "f2f53890ad92447149ae0361f89b5449d5b24746")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", 'publicearn.com')
+SHORTENER_API2 = environ.get("SHORTENER_API2", "fd85d405b577f2cd524e5d8a185505383d0d4e97")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", 'inshorturl.com')
 SHORTENER_API3 = environ.get("SHORTENER_API3", "")
 SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", '')
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
@@ -69,13 +69,13 @@ YEARS = [f'{i}' for i in range(2024 , 2002,-1 )]
 SEASONS = [f'season {i}'for i in range (1 , 23)]
 REF_PREMIUM = 30
 PREMIUM_POINT = 1500
-auth_channel = environ.get('AUTH_CHANNEL', '-1001572271892')
+auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1001953724858'))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002122722037'))
 request_channel = environ.get('REQUEST_CHANNEL', '')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
-UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1001868871195'))
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001572271892'))
+UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1001906470657'))
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001906470657'))
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 PORT = os.environ.get('PORT', '5000')
 MAX_BTN = int(environ.get('MAX_BTN', '8'))
