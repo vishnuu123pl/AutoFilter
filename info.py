@@ -17,11 +17,11 @@ def is_enabled(value, default):
 #main variables
 API_ID = int(environ.get('API_ID', '13305226'))
 API_HASH = environ.get('API_HASH', '8cde2475d6b0cb1162b89ebbac71a95d')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6621594376:AAGCwfRJKYFVyyACBA5PFxDpPzzye95MmwU')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6375200576:AAGVJdULNUtf1S2qRaZrXvXlVVytXuzJ-OQ')
 
 PICS = (environ.get('PICS', 'https://graph.org/file/2518d4eb8c88f8f669f4c.jpg https://graph.org/file/d6d9d9b8d2dc779c49572.jpg https://graph.org/file/4b04eaad1e75e13e6dc08.jpg https://graph.org/file/05066f124a4ac500f8d91.jpg https://graph.org/file/2c64ed483c8fcf2bab7dd.jpg')).split() #SAMPLE PIC
 START_IMG = environ.get('START_IMG', 'https://graph.org/file/208ae1ffacc082167dbc4.jpg')
-QR_CODE = environ.get('QR_CODE', '')
+QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/208ae1ffacc082167dbc4.jpg')
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6497757690').split()]
@@ -29,7 +29,7 @@ USERNAME = environ.get('USERNAME', "https://telegram.me/vis_hnu_bot")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001906470657'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '1258310642 6577722992').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://V:V@cluster0.ommvnlw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://V:V@cluster0.3smgvla.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
