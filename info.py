@@ -24,12 +24,12 @@ START_IMG = environ.get('START_IMG', 'https://graph.org/file/208ae1ffacc082167db
 QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/208ae1ffacc082167dbc4.jpg')
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6497757690').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1258310642').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/vis_hnu_bot")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001906470657'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '1258310642 6577722992').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://V:V@cluster0.3smgvla.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/asianet_surya_zee')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "")
 
 #Auto approve 
 CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
@@ -41,7 +41,7 @@ AI = is_enabled((environ.get("AI","False")), True)
 OPENAI_API = environ.get("OPENAI_API", " ")
 DEEP_API = environ.get("DEEP_API", "3ac9b077-654f-45c6-a1f0-a04a5ef6b69e")
 GOOGLE_API_KEY = environ.get("GOOGLE_API_KEY", "AIzaSyD214hhYJ-xf8rfaWX044_g1VEBQ0ua55Q")
-AI_LOGS = int(environ.get("AI_LOGS", "-1001868871195")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of Bot ]
+AI_LOGS = int(environ.get("AI_LOGS", "")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of Bot ]
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "public")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
@@ -51,7 +51,7 @@ DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1001906470657'))
 URL = environ.get('URL', '') # your deployment url
 STICKERS_IDS = ('CAACAgUAAxkBAAEC5s1mfmbnUx4f7jYODXqmoDo_QltzLQACmw4AAl3VAVYieASlHlskATUE').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001906470657'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/How_to_Download_7x/35")
 SHORTENER_API = environ.get("SHORTENER_API", "f2f53890ad92447149ae0361f89b5449d5b24746")
